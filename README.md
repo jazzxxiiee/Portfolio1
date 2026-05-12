@@ -31,6 +31,7 @@ print("Grade with Bonus:", round(bonus, 2))
 print("\nProgram Finished Successfully!")
 ```
 passed = final_grade >= 75 # student passes if grade is greater or equal to 75
+
 scholar = final_grade >= 90 # student is a scholar if final grade and attendance is above or equal to 90
 
 #### Description

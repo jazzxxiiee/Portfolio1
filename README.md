@@ -1,20 +1,21 @@
 # Portfolio1
 print("=== STUDENT EVALUATION SYSTEM ===\n")
 
-name = input("enter student name: ") #string
-quiz = float(input("enter quiz score: ")) #float
-exam = float(input("enter exam score: ")) #float
-attendance = float(input("enter attendance score: "))
+name = input("enter student name: ")  # string
+quiz = float(input("enter quiz score: "))  # float
+exam = float(input("enter exam score: "))  # float
+attendance = float(input("enter attendance score: "))  # float
 
 final_grade = (quiz * 0.30) + (exam * 0.50) + (attendance * 0.20)
+
 passed = final_grade >= 75
 scholar = final_grade >= 90 and attendance >= 90
 
 print("\n========== STUDENT REPORT ==========")
-print("Student Name :", name)
-print("Final Grade  :", round(final_grade, 2))
-print("Passed       :", passed)
-print("Scholar      :", scholar)
+print("Student Name  : ", name)
+print("Final Grade   : ", round(final_grade, 2))
+print("Passed        : ", "Yes" if passed else "No")
+print("Scholar       : ", "Yes" if scholar else "No")
 print("====================================")
 
 bonus = final_grade + 5
